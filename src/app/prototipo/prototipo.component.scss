@@ -1,0 +1,37 @@
+agm-map {
+    height: 500px;
+  }
+
+
+  .example-card {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px 3px rgba($color: #333, $alpha: 0.3);
+  }
+
+  .example-form {
+    width: 100%;
+  }
+
+  .example-full-width {
+    width: 150%;
+  }
+
+  #map {
+    height: 500px;
+    width: 100%;
+   }
+  
+   :host ::ng-deep .p-message-custom {
+    background-color: #E1CFE7;
+    border: solid #8A427A;
+    border-width: 0 0 0 6px;
+    color: #2c1e30;
+}
+
+:host ::ng-deep .p-message-close-icon {
+    color: #2c1e30;
+}
+  
+  

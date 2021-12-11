@@ -1,0 +1,57 @@
+<head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrUwvX6xl0Yg0Nroae8tcHevp4NegJTw0"
+        type="text/javascript"></script>
+</head>
+
+<div>
+    <br>
+    <div>
+        <mat-card class="example-card">Comunicación
+            <mat-card-content>
+                <br>
+                <form class="example-form">
+                    <mat-form-field style="width: 100%;">
+                        <mat-label>Historial Mensajes</mat-label>
+                        <textarea cdkTextareaAutosize #autosize="cdkTextareaAutosize"cdkAutosizeMinRows="7" cdkAutosizeMaxRows="14" 
+                        matInput [(ngModel)]="mensajeArea" name="mensajeArea" id="mensajeArea"></textarea>
+                    </mat-form-field>
+                    <mat-form-field style="width: 89%; margin-right: 20px;">
+                        <mat-label>Mensaje</mat-label>
+                        <input matInput [(ngModel)]="mensajePantalla" placeholder="Ingrese Mensaje" name="mensajePantalla" id="mensajePantalla">
+                    </mat-form-field>
+                    <button mat-flat-button color="primary" (click)="obtenerMensaje()">Enviar</button>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <br>
+    <br>
+    <div>
+        <mat-card class="example-card">Monitoreo de signos vitales
+            <mat-card-content>
+                <br>
+                <p-chart *ngIf="data" type="line" [data]="data" (onDataSelect)="selectData($event)"></p-chart>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <br>
+    <br>
+    <p-toast position="top-right"></p-toast>
+    <div>
+        <mat-card class="example-card">Ubicación
+            <mat-card-content>
+                <br>
+                <!-- <div #mapContainer id="map"></div> -->
+                <agm-map [latitude]="lat" [longitude]="lng">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                </agm-map>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <br>
+    <div>
+
+    </div>
+    <br>
+
+</div>

@@ -1,0 +1,41 @@
+.example-card {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px 3px rgba($color: #333, $alpha: 0.3);
+}
+
+.example-header-image {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/27/Logo_ESPE.png');
+  background-size: cover;
+}
+
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+
+  .rightContainer{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftContainer{
+      width: 60%;
+      overflow: hidden;
+  }
